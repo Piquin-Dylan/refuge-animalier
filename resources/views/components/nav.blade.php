@@ -1,10 +1,10 @@
 <div>
     <h1 class="hidden">Page d'accueil</h1>
-    <nav>
-        <h2>Navigation principal</h2>
-        <a href="">Accueil</a>
-        <a href="">A propos</a>
-        <a href="">Adopter</a>
-        <a href="">Contact</a>
+    <nav class="bg">
+        <h2 class="hidden">Navigation principal</h2>
+        <a href="" title="se diriger vers la page d'accueil">Accueil</a>
+        <a href="" title="se diriger vers la page A propos">A propos</a>
+        <a href="" title="se diriger vers la page d'adoption">Adopter</a>
+        <a href="" title="se diriger vers la page de contact">Contact</a>
     </nav>
 </div>

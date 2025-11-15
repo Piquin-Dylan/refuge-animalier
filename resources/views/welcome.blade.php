@@ -15,12 +15,14 @@
 
     @endif
 </head>
-<h1 class="text-2xl" >Hello</h1>
 <header>
-<x-nav />
+    <x-nav/>
 </header>
 <body>
-
-
+<section>
+    <h2 class="hidden">Section de présentation</h2>
+    <p class="font-bold">{{__('home.TitleSectionPresentation')}}</p>
+    <p>{{__('home.MainContentSectionPresentation')}}</p>
+</section>
 </body>
 </html>
