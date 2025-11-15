@@ -6,5 +6,6 @@
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --txtTest : 28px
+    --color-regal-orange : #F38B2D;
+    --color-regal-baige : #FCE9D9;
 }

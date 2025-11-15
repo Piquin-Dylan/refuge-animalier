@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
 
-    <!-- Styles / Scripts -->
     @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -18,11 +17,15 @@
 <header>
     <x-nav/>
 </header>
-<body>
-<section>
+<body class="bg-regal-baige">
+<section class="pl-5 pr-5">
     <h2 class="hidden">Section de présentation</h2>
-    <p class="font-bold">{{__('home.TitleSectionPresentation')}}</p>
-    <p>{{__('home.MainContentSectionPresentation')}}</p>
+    <p class="font-bold pb-4">{{__('home.TitleSectionPresentation')}}</p>
+    <p class="">{{__('home.MainContentSectionPresentation')}}</p>
+    <div class="flex gap-8 justify-center pt-5 pb-5">
+        <x-button/>
+    </div>
+    <img alt="Image représentant une personne avec un animal" src="{{asset('ImageSectionPrésentation.png')}}">
 </section>
 </body>
 </html>
