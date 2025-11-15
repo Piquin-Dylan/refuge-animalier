@@ -57,5 +57,7 @@
     <img class="pb-16" alt="Image représentant une personne avec un animal"
          src="{{asset('1200x680_sc_gettyimages-1768484161.webp')}}">
 </section>
+
+<x-footer></x-footer>
 </body>
 </html>
