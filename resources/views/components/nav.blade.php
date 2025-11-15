@@ -2,9 +2,9 @@
     <h1 class="hidden">Page d'accueil</h1>
     <nav class="bg">
         <h2 class="hidden">Navigation principal</h2>
-        <a href="" title="se diriger vers la page d'accueil">Accueil</a>
-        <a href="" title="se diriger vers la page A propos">A propos</a>
-        <a href="" title="se diriger vers la page d'adoption">Adopter</a>
-        <a href="" title="se diriger vers la page de contact">Contact</a>
+        <a href="" title="se diriger vers la page d'accueil">{{__('heading.Home')}}</a>
+        <a href="" title="se diriger vers la page A propos">{{__('heading.About')}}</a>
+        <a href="" title="se diriger vers la page d'adoption">{{__('heading.Adoption')}}</a>
+        <a href="" title="se diriger vers la page de contact">{{__('heading.Contact')}}</a>
     </nav>
 </div>
