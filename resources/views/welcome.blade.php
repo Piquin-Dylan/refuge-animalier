@@ -23,9 +23,14 @@
     <p class="font-bold pb-4">{{__('home.TitleSectionPresentation')}}</p>
     <p class="">{{__('home.MainContentSectionPresentation')}}</p>
     <div class="flex gap-8 justify-center pt-5 pb-5">
-        <x-button/>
+        <x-button>En savoir plus</x-button>
+        <x-button>Adopter</x-button>
     </div>
-    <img alt="Image représentant une personne avec un animal" src="{{asset('ImageSectionPrésentation.png')}}">
+    <img class="pb-16" alt="Image représentant une personne avec un animal"
+         src="{{asset('ImageSectionPrésentation.png')}}">
 </section>
+<x-stats>100 animaux ont déjà été adopter</x-stats>
+<x-stats>10 bénévoles travaillent pour le refuges</x-stats>
+<x-stats>150 animaux attendent avant d’être adopter</x-stats>
 </body>
 </html>
