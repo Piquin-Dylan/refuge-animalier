@@ -17,7 +17,7 @@
     <x-nav/>
 </header>
 <body class="bg-regal-baige">
-<x-home.sectionPresentation></x-home.sectionPresentation>
+<x-home.sectionPresentation title_section="section présentation" title_content="{{__('home.TitleSectionPresentation')}}" content="{{__('home.MainContentSectionPresentation')}}" cta1="{{__('home.LearnMore')}}" cta2="{{__('home.Adoption')}}" image="{{asset('ImageSectionPrésentation.png')}}"></x-home.sectionPresentation>
 <x-stats></x-stats>
 <x-home.sectionSearchAnimal></x-home.sectionSearchAnimal>
 <x-home.sectionVolunteers></x-home.sectionVolunteers>

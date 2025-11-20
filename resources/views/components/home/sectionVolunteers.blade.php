@@ -1,5 +1,5 @@
 
-<section class="pl-5 pr-5 flex justify-center  flex-col max-w-section lg:flex-row lg:gap-content ">
+<section class="pl-5 pr-5 pt-6 flex justify-center  flex-col max-w-section lg:flex-row lg:gap-content ">
     <div class="max-w-content">
         <h2 class="hidden">Section de présentation</h2>
         <p class="font-bold pb-4 text-title">{{__('home.TitleSectionVolunteer')}}</p>
@@ -10,6 +10,6 @@
         </div>
     </div>
 
-    <img class=" lg:max-w-image lg:max-h-image order-last" alt="Image représentant une personne avec un animal"
+    <img class=" lg:max-w-image lg:max-h-image order-first " alt="Image représentant une personne avec un animal"
          src="{{asset('ImageSectionPrésentation.png')}}">
 </section>
