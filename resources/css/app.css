@@ -13,45 +13,74 @@
     --max-height-image: 412px;
     --gap-content: 96px;
 
-
     --text-title: 28px;
     --text-subtitle: 24px;
     --text-content: 20;
     --text-cta: 20px;
 
     --p-b-section: 48px;
-
-
 }
+
 .title {
-    @apply text-title font-bold pb-4
+    @apply text-title font-bold pb-4;
 }
 
 .subtile {
-    @apply text-subtitle pb-4
+    @apply text-subtitle pb-4;
 }
 
 .sectionFlex {
-    @apply flex justify-center flex-col max-w-section lg:flex-row lg:gap-content
+    @apply flex justify-center flex-col max-w-section lg:flex-row lg:gap-content;
 }
 
-
 .cta1 {
-    @apply rounded-lg bg-white p-4 w-41 font-extrabold text-regal-orange hover:bg-regal-orange hover:text-white
+    @apply rounded-lg bg-white p-4 w-41 font-extrabold text-regal-orange hover:bg-regal-orange hover:text-white;
 }
 
 .cta2 {
-    @apply rounded-lg bg-regal-orange p-4 w-41 font-extrabold text-white hover:bg-white hover:text-regal-orange
+    @apply rounded-lg bg-regal-orange p-4 w-41 font-extrabold text-white hover:bg-white hover:text-regal-orange;
 }
 
 .styleStat {
-    @apply text-black font-bold rounded-3xl p-10
+    @apply text-black font-bold rounded-3xl p-10;
 }
 
 @layer utilities {
+
+    /* Bordure stat */
     .border-stat {
         border: 10px solid transparent;
-        border-image-source: url('../../public/bordure.svg'); /* ton SVG ou PNG */
+        border-image-source: url('../../public/bordure.svg');
         border-image-slice: 30;
+    }
+
+    /* Lignes du burger */
+    .burger-line {
+        @apply w-8 h-[3px] bg-white transition-all duration-300 origin-center;
+    }
+
+    /* Menu mobile hidden */
+    .mobile-menu {
+        @apply hidden flex-col gap-4 opacity-0 -translate-y-3
+        transition-all duration-300 ease-out
+        md:flex md:flex-row md:gap-6 md:mt-0 md:opacity-100 md:translate-y-0;
+    }
+
+    /* MENU OUVERT via :has() */
+    nav:has(#nav-toggle:checked) .mobile-menu {
+        @apply block opacity-100 translate-y-0 mt-4;
+    }
+
+    /* BURGER → CROIX */
+    nav:has(#nav-toggle:checked) .burger-line:nth-child(1) {
+        @apply translate-y-[9px] rotate-45;
+    }
+
+    nav:has(#nav-toggle:checked) .burger-line:nth-child(2) {
+        @apply opacity-0;
+    }
+
+    nav:has(#nav-toggle:checked) .burger-line:nth-child(3) {
+        @apply -translate-y-[9px] -rotate-45;
     }
 }

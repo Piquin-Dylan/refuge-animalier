@@ -1,4 +1,7 @@
-µ
+
+
+
+
 <section class="p-5">
     <h2 class="pb-4 text-title font-bold">L’histoire du refuge</h2>
     <p class="text-subtitle">Le refuge Les Pattes Heureuses a vu le jour grâce à Élise Martin, amoureuse des animaux

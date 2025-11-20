@@ -1,10 +1,28 @@
-<div>
-    <h1 class="hidden">Page d'accueil</h1>
-    <nav class="bg">
-        <h2 class="hidden">Navigation principal</h2>
-        <a href="{{route('home')}}" title="se diriger vers la page d'accueil">{{__('heading.Home')}}</a>
-        <a href="{{route('about')}}" title="se diriger vers la page A propos">{{__('heading.About')}}</a>
-        <a href="" title="se diriger vers la page d'adoption">{{__('heading.Adoption')}}</a>
-        <a href="" title="se diriger vers la page de contact">{{__('heading.Contact')}}</a>
-    </nav>
-</div>
+<nav class="bg-regal-orange px-5 py-3">
+    <div class="flex items-center justify-between">
+
+        <img width="200" src="{{asset('logo.svg')}}" alt="logo">
+
+        <!-- Checkbox caché qui déclenche :has() -->
+        <input id="nav-toggle" type="checkbox" class="hidden">
+
+        <!-- Bouton Burger -->
+        <label for="nav-toggle" class="flex flex-col gap-[6px] md:hidden cursor-pointer">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </label>
+
+    </div>
+
+    <!-- MENU -->
+    <ul class="mobile-menu mt-4 hidden flex-col gap-4 text-white
+               opacity-0 -translate-y-3 transition-all duration-300 ease-out
+               md:flex md:flex-row md:gap-6 md:mt-0 md:opacity-100 md:translate-y-0">
+
+        <li><a href="{{route('home')}}">Home</a></li>
+        <li><a href="{{route('about')}}">About</a></li>
+        <li><a href="{{route('volunteers')}}">Volunteers</a></li>
+        <li><a href="">Adoption</a></li>
+    </ul>
+</nav>
