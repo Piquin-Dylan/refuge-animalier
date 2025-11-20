@@ -20,6 +20,7 @@
 <x-home.sectionPresentation></x-home.sectionPresentation>
 <x-stats></x-stats>
 <x-home.sectionSearchAnimal></x-home.sectionSearchAnimal>
+<x-home.sectionVolunteers></x-home.sectionVolunteers>
 <x-footer></x-footer>
 </body>
 </html>

@@ -1,4 +1,9 @@
 
+@props([
+    
+])
+
+
 <section class="pb-6">
     <h2 class="text-4xl pb-5 pt-4 pl-5 font-bold">Nos animaux</h2>
     <div class="flex flex-col items-center gap-4 pl-5 md:flex-row lg:flex-row lg:gap-6">
