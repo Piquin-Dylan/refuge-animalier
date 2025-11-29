@@ -1,4 +1,20 @@
+@props(['link' => null])
 
-<a class="cursor-pointer" href="{{route('about')}}"><button  {{ $attributes->merge(['type' => 'button']) }} class="rounded-lg bg-white p-4 w-48 font-extrabold text-regal-orange">
-        {{ $slot }}
-    </button></a>
+@php
+    use Illuminate\Support\Str;
+
+    if ($link === null) {
+        $href = '#';
+    } elseif (Str::startsWith($link, ['http://', 'https://'])) {
+        $href = $link;
+    } else {
+        $href = route($link);
+    }
+@endphp
+
+<a href="{{ $href }}"
+    {{ $attributes->merge([
+        'class' => 'rounded-lg bg-white p-4 w-48 font-extrabold text-regal-orange cursor-pointer inline-block'
+    ]) }}>
+    {{ $slot }}
+</a>

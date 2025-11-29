@@ -14,6 +14,6 @@
             <span>{{$sexe}}</span>
             <span>{{$age}}</span>
         </div>
-        <x-button class="cta2">{{$cta}}</x-button>
+        <x-button link="{{route('descriptionAnimal')}}" class="cta3">{{$cta}}</x-button>
     </div>
 </div>

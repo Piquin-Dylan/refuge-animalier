@@ -12,6 +12,9 @@
 </section>
 <div class="lg:flex  md:flex justify-center lg:flex-row">
    <x-cardMissions img="{{asset('cat 1.svg')}}" content="️Respect de chaque vie animale"></x-cardMissions>
+   <x-cardMissions img="{{asset('cat 1.svg')}}" content="️Respect de chaque vie animale"></x-cardMissions>
+   <x-cardMissions img="{{asset('cat 1.svg')}}" content="️Respect de chaque vie animale"></x-cardMissions>
+   <x-cardMissions img="{{asset('cat 1.svg')}}" content="️Respect de chaque vie animale"></x-cardMissions>
 </div>
 <div class="flex justify-center">
     <x-button>En savoir plus</x-button>

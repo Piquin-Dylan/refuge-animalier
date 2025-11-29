@@ -6,7 +6,13 @@
         <x-button>Chien</x-button>
         <x-button>Chat</x-button>
     </div>
-    <x-cardAnimals image="{{asset('Sans titre-1 5.png')}}" name="Rex" sexe="Mâle" age="2 ans" cta="adopter"></x-cardAnimals>
+    <div class="flex flex-row  justify-center flex-wrap lg:justify-start">
+        <x-cardAnimals image="{{asset('Sans titre-1 5.png')}}" name="Rex" sexe="Mâle" age="2 ans" cta="adopter"></x-cardAnimals>
+        <x-cardAnimals image="{{asset('Sans titre-1 5.png')}}" name="Rex" sexe="Mâle" age="2 ans" cta="adopter"></x-cardAnimals>
+        <x-cardAnimals image="{{asset('Sans titre-1 5.png')}}" name="Rex" sexe="Mâle" age="2 ans" cta="adopter"></x-cardAnimals>
+        <x-cardAnimals image="{{asset('Sans titre-1 5.png')}}" name="Rex" sexe="Mâle" age="2 ans" cta="adopter"></x-cardAnimals>
+    </div>
+
 </section>
 
 

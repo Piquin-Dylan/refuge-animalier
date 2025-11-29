@@ -1,7 +1,7 @@
 <nav class="bg-regal-orange px-5 py-3 md:flex md:items-center md:justify-between">
     <div class="flex items-center justify-between">
 
-        <img width="200" src="{{asset('logo.svg')}}" alt="logo">
+      <img width="200" src="{{asset('logo.svg')}}" alt="logo">
 
         <input id="nav-toggle" type="checkbox" class="hidden">
 
@@ -17,9 +17,10 @@
                opacity-0 -translate-y-3 transition-all duration-300 ease-out
                md:flex md:flex-row md:gap-6 md:mt-0 md:opacity-100 md:translate-y-0">
 
-        <li><a href="{{route('home')}}">Home</a></li>
-        <li><a href="{{route('about')}}">About</a></li>
-        <li><a href="{{route('volunteers')}}">Volunteers</a></li>
-        <li><a href="">Adoption</a></li>
+        <li><a href="{{route('home')}}">Accueil</a></li>
+        <li><a href="{{route('about')}}">A propos</a></li>
+        <li><a href="{{route('volunteers')}}">Devenir bénévole</a></li>
+        <li><a href="{{route('adoption')}}">Adoption</a></li>
+        <li><a href="{{route('adoption')}}">Contact</a></li>
     </ul>
 </nav>

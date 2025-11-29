@@ -7,6 +7,7 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --color-regal-orange: #F38B2D;
     --color-regal-baige: #FCE9D9;
+    --color-regal-grey : #DEDEDE;
     --max-width-content: 840px;
     --max-width-section: 1416px;
     --max-width-image: 480px;
@@ -19,6 +20,20 @@
     --text-cta: 20px;
 
     --p-b-section: 48px;
+}
+
+
+
+.input {
+    @apply bg-white rounded-2xl text-black p-2 w-76 border border-[#E5E5E5]
+}
+
+.label {
+    @apply flex flex-col gap-2
+}
+
+.spanContact {
+    @apply flex flex-col gap-2 text-2xl
 }
 
 .title {
@@ -39,6 +54,11 @@
 
 .cta2 {
     @apply rounded-lg bg-regal-orange p-4 w-41 font-extrabold text-white hover:bg-white hover:text-regal-orange;
+}
+
+
+.cta3 {
+    @apply rounded-lg bg-regal-orange p-4 w-41 font-extrabold text-white justify-center;
 }
 
 .styleStat {
